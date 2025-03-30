@@ -78,8 +78,90 @@
     #about-me .wrapper div{
       grid-column: 1 / 3;
     }
+
+    #about-me h2{
+      font-size: 2rem;
+    }
  
    .emily{
       max-width: 100%;
       grid-column: 3 / 4;
     }
+
+    #services{
+      background-color: #fafafa;
+      padding: 30px 60px 60px;
+
+    }
+
+    #services h2{
+      max-width: 100%;
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    #services #services-text{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    #services-text article{
+      background-color: #fff;
+      padding: 1em;
+    
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+  #services-text a:link, a:visited {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #000;
+  margin-top: auto;
+  padding: 10px 15px;
+}
+
+#services-text a:hover,
+a:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+#work h2, #work p{
+max-width: 100%;
+text-align: center;
+}
+
+#work .wrapper div{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: 
+  "img1 img1 img1 img2 img2 img2"
+  "img3 img3 img4 img4 img5 img5";
+  margin-bottom: 50px;
+}
+
+#work img:nth-child(1){
+  grid-area: img1;
+  max-width: 100%;
+}
+#work img:nth-child(2){
+  grid-area: img2;
+  max-width: 100%;
+}
+#work img:nth-child(3){
+  grid-area: img3;
+  max-width: 100%;
+}
+#work img:nth-child(4){
+  grid-area: img4;
+  max-width: 100%;
+}
+#work img:nth-child(5){
+  grid-area: img5;
+  max-width: 100%;
+}
